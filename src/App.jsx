@@ -2,7 +2,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Contact from './Pages/Contact';
-import Career from './Pages/Career';
+import Careers from './Pages/Career';
 import ConstServices from './Pages/ConstServices';
 import DCServices from './Pages/DCServices';
 import FieldServices from './Pages/FieldServices';
@@ -18,7 +18,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/Contact" element={<Contact />} />
-        <Route path="/Career" element={<Career />} />
+        <Route path="/Careers" element={<Careers />} />
         <Route path='/ConstructionServices' element={<ConstServices/>} />
         <Route path='/DataCenterServices' element={<DCServices/>} />
         <Route path='/FieldServices' element={<FieldServices/>} />
