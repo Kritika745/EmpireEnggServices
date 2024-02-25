@@ -23,11 +23,11 @@ const Navbar=()=> {
         </div>
         <div className="hidden lg:block mx-10 ">
           <ul className="flex gap-8">
-            <Link to='/'><li className={`text-base text-white hover:text-[#00cc99] font-bold ${currentPathname === '/' ? 'border-b-2 border-[#00cc99] text-emerald-400' : 'border-none'}`}>Home</li></Link>           
-             <Link to='/#about'><li className={`text-base text-white hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? 'border-b-2 border-[#00cc99] text-emerald-400' : 'border-none'} `}>About Us</li></Link>
-            <Link to='/#services'><li className={`text-base  text-white hover:text-[#00cc99] font-bold ${currentPathname === '/services' ? 'border-b-2 border-[#00cc99] text-emerald-400' : 'border-none'} `}>Services</li></Link>
-            <Link to='/Careers'><li className={`text-base text-white hover:text-[#00cc99] font-bold ${currentPathname === '/Careers' ? 'border-b-2 border-[#00cc99] text-emerald-400' : 'border-none'} `}>Careers</li></Link>
-            <Link to='/Contact'><li className={`text-base text-white hover:text-[#00cc99] font-bold ${currentPathname === '/Contact' ? 'border-b-2 border-[#00cc99] text-emerald-400' : 'border-none'}`}>Contact Us</li></Link>   
+            <Link to='/'><li className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'}`}>Home</li></Link>           
+             <Link to='/#about'><li className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'} `}>About Us</li></Link>
+            <Link to='/#services'><li className={`text-base  hover:text-[#00cc99] font-bold ${currentPathname === '/#services' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'} `}>Services</li></Link>
+            <Link to='/Careers'><li className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/Careers' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'} `}>Careers</li></Link>
+            <Link to='/Contact'><li className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/Contact' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'}`}>Contact Us</li></Link>   
           </ul>
         </div>
         <div className="lg:hidden">
@@ -53,11 +53,11 @@ const Navbar=()=> {
                 </div>
                 <div className="mt-6">
                   <nav className="grid gap-2">
-                     <Link to='/'><li onClick={()=>setIsMenuOpen(false)} className={`text-base text-white hover:text-[#00cc99] font-bold  ${currentPathname === '/' ? 'text-emerald-400' : 'border-none'} `}>Home</li></Link>
-                     <Link to='/#about'><li  onClick={()=>setIsMenuOpen(false)} className={`text-base text-white hover:text-[#00cc99] font-bold ${currentPathname === '/#services' ? ' text-emerald-400' : 'border-none'} `}>About Us</li></Link>
-                     <Link to='/#services'><li  onClick={()=>setIsMenuOpen(false)} className={`text-base  text-white hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? ' text-emerald-400' : 'border-none'} `}>Services</li></Link>
-                     <Link to='/Careers'><li  onClick={()=>setIsMenuOpen(false)} className={`text-base text-white hover:text-[#00cc99] font-bold ${currentPathname === '/Careers' ? ' text-emerald-400' : 'border-none'} `}>Careers</li></Link>
-                     <Link to='/Contact'><li onClick={()=>setIsMenuOpen(false)} className={`text-base text-white hover:text-[#00cc99] font-bold ${currentPathname === '/Contact' ? ' text-emerald-400' : 'border-none'}`}>Contact Us</li></Link> 
+                     <Link to='/'><li onClick={()=>setIsMenuOpen(false)} className={`text-base hover:text-[#00cc99] font-bold  ${currentPathname === '/' ? 'text-[#00cc99]' : 'border-none text-white'} `}>Home</li></Link>
+                     <Link to='/#about'><li  onClick={()=>setIsMenuOpen(false)} className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/#services' ? ' text-[#00cc99]' : 'border-none text-white'} `}>About Us</li></Link>
+                     <Link to='/#services'><li  onClick={()=>setIsMenuOpen(false)} className={`text-base  hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? ' text-[#00cc99]' : 'border-none text-white'} `}>Services</li></Link>
+                     <Link to='/Careers'><li  onClick={()=>setIsMenuOpen(false)} className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/Careers' ? ' text-[#00cc99]' : 'border-none text-white'} `}>Careers</li></Link>
+                     <Link to='/Contact'><li onClick={()=>setIsMenuOpen(false)} className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/Contact' ? ' text-[#00cc99]' : 'border-none text-white'}`}>Contact Us</li></Link> 
                   </nav>
                 </div>
                
