@@ -9,6 +9,15 @@ import { Link } from 'react-router-dom';
 import { ArrowRightCircle } from 'lucide-react';
 
 const Carousel = () => {
+
+  
+    const handleClick = () => {
+      const serviceSection = document.getElementById('services');
+      if (serviceSection) {
+        serviceSection.scrollIntoView({ behavior: 'smooth' }); 
+      }
+    }
+
   return (
     <>
       <div className="main-carousel -z-1">
@@ -30,11 +39,11 @@ const Carousel = () => {
             <div className='slide1 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
                  <div className='bg-black bg-opacity-35 w-full h-full flex flex-col justify-center items-center '>
                     <div className='flex flex-col items-center'>
-                    <h1 className='text-white text-5xl font-bold'>EMPIRE ENGINEERING SERVICES</h1>
-                    <h2 className='text-white font-semibold text-3xl '>Driven by excellence,built on culture</h2>
+                    <h1 className='poppins text-white text-5xl '>EMPIRE ENGINEERING SERVICES</h1>
+                    <h2 className='poppins mt-1 text-white font-semibold text-3xl '>Driven by excellence,built on culture</h2>
                     </div>
                     <div>
-                      <Link to='/#about'><button className='bg-[#00cc99] mt-4 w-30 px-3 py-2 rounded-md font-bold flex text-[1.15rem]'> Learn More <ArrowRightCircle className='ml-2 mt-[1.5px]' size={25}/></button></Link>
+                      <Link to='/#services'><button onClick={handleClick} className='bg-[#00cc99] hover:bg-emerald-600 mt-8 w-30 px-3 py-2 rounded-md font-bold flex text-[1.15rem]'> Learn More <ArrowRightCircle className='ml-2 mt-[1.5px]' size={25}/></button></Link>
                     </div>
                     
                     </div>

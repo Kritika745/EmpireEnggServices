@@ -5,6 +5,13 @@ import logo from '/ees-logo.png'
 import '../App.css'
 
 const Navbar=()=> {
+  const handleClick = () => {
+    const serviceSection = document.getElementById('about');
+    if (serviceSection) {
+      serviceSection.scrollIntoView({ behavior: 'smooth' }); 
+    }
+  }
+  
   const [isMenuOpen, setIsMenuOpen] = React.useState(false)
   const location = useLocation();
 
@@ -32,7 +39,7 @@ const Navbar=()=> {
         <div className="hidden lg:block mx-10 ">
           <ul className="flex gap-8">
             <Link to='/'><li className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'}`}>Home</li></Link>           
-             <Link to='/#about'><li className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'} `}>About Us</li></Link>
+             <Link to='/#about'><li onClick={handleClick} className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'} `}>About Us</li></Link>
              <li className="relative z-50 ">
               <span className={`text-base hover:text-[#00cc99] font-bold cursor-pointer ${currentPathname.includes('/services') ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'}`} onClick={toggleMenu1}>Services</span>
               {isMenuOpen1 && (

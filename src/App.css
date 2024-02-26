@@ -1,7 +1,18 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif&display=swap');
+
 .blue{
     background: linear-gradient(to top, #2e2b38 0%, #282642 100%);
 }
 
-.text-blue{
-    color:linear-gradient(to top, #2e2b38 0%, #282642 100%);
+.text_blue{
+    color: rgb(56, 21, 120);
+}
+
+.poppins{
+    font-family:"poppins";
+}
+
+.noto{
+    font-family: 'Noto Serif', serif;
 }
