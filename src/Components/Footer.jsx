@@ -31,7 +31,7 @@ const Footer = () => {
                 <p className='text-white'>Kenilworth, NJ 07033</p>
              </div>
          </div>
-         <div className='text-white mt-14 mb-2'>
+         <div className='text-white mt-8 md:mt-14 mb-4'>
               <p>Copyright © 2022 by Empire Engineering Services.</p>
          </div>
       </div>
