@@ -11,7 +11,6 @@ const Home = () => {
     <Navbar/>
     <Carousel/>
     <Services/>
-    <AboutUs/>
     <Footer/>
 
     
