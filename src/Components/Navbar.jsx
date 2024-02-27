@@ -31,7 +31,7 @@ const Navbar=()=> {
   console.log(currentPathname)
  
   return (
-    <div className="blue w-full md:h-20 h-22 z-10 flex">
+    <div className="blue w-full md:h-20 h-22 z-10 flex fixed">
       <div className=" md:h-20 h-22 flex w-full items-center px-4 py-2 sm:px-6 lg:px-8 justify-between ">
         <div className="">
          <img className='w-[24vw] md:w-[10vw] mx-10' src={logo} alt="" />

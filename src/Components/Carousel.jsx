@@ -20,7 +20,7 @@ const Carousel = () => {
 
   return (
     <>
-      <div className="main-carousel -z-1">
+      <div className="main-carousel -z-1 pt-20 ">
       <Swiper
         
         slidesPerView={1}
@@ -37,7 +37,7 @@ const Carousel = () => {
       >
         <SwiperSlide>
             <div className='slide1 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
-                 <div className='bg-black bg-opacity-35 w-full h-full flex flex-col justify-center items-center '>
+                 <div className='bg-black bg-opacity-40 w-full h-full flex flex-col justify-center items-center '>
                     <div className='flex flex-col items-center'>
                     <h1 className='poppins text-white text-5xl '>EMPIRE ENGINEERING SERVICES</h1>
                     <h2 className='poppins mt-1 text-white font-semibold text-3xl '>Driven by excellence,built on culture</h2>
@@ -51,7 +51,7 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='slide2 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
-                 <div className='bg-black bg-opacity-35 w-full h-full flex justify-center items-center '>
+                 <div className='bg-black bg-opacity-40 w-full h-full flex justify-center items-center '>
                     <div>
                     <h1 className='text-white text-4xl'>EMPIRE ENGINEERING SERVICES</h1>
                     </div>
@@ -61,7 +61,7 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='slide3 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
-                 <div className='bg-black bg-opacity-35 w-full h-full flex justify-center items-center '>
+                 <div className='bg-black bg-opacity-40 w-full h-full flex justify-center items-center '>
                     <div>
                     <h1 className='text-white text-4xl'>EMPIRE ENGINEERING SERVICES</h1>
                     </div>
@@ -71,7 +71,7 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='slide4 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
-                 <div className='bg-black bg-opacity-35 w-full h-full flex justify-center items-center '>
+                 <div className='bg-black bg-opacity-40 w-full h-full flex justify-center items-center '>
                     <div>
                     <h1 className='text-white text-4xl'>EMPIRE ENGINEERING SERVICES</h1>
                     </div>
@@ -81,7 +81,7 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='slide5 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
-                 <div className='bg-black bg-opacity-35 w-full h-full flex justify-center items-center '>
+                 <div className='bg-black bg-opacity-40 w-full h-full flex justify-center items-center '>
                     <div>
                     <h1 className='text-white text-4xl'>EMPIRE ENGINEERING SERVICES</h1>
                     </div>
@@ -91,7 +91,7 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='slide6 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
-                 <div className='bg-black bg-opacity-35 w-full h-full flex justify-center items-center '>
+                 <div className='bg-black bg-opacity-40 w-full h-full flex justify-center items-center '>
                     <div>
                     <h1 className='text-white text-4xl'>EMPIRE ENGINEERING SERVICES</h1>
                     </div>
@@ -101,7 +101,7 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='slide7 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
-                 <div className='bg-black bg-opacity-35 w-full h-full flex justify-center items-center '>
+                 <div className='bg-black bg-opacity-40 w-full h-full flex justify-center items-center '>
                     <div>
                     <h1 className='text-white text-4xl'>EMPIRE ENGINEERING SERVICES</h1>
                     </div>
@@ -111,7 +111,7 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='slide8 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
-                 <div className='bg-black bg-opacity-35 w-full h-full flex justify-center items-center '>
+                 <div className='bg-black bg-opacity-40 w-full h-full flex justify-center items-center '>
                     <div>
                     <h1 className='text-white text-4xl'>EMPIRE ENGINEERING SERVICES</h1>
                     </div>
@@ -121,9 +121,9 @@ const Carousel = () => {
           </SwiperSlide>
           <SwiperSlide>
             <div className='slide9 flex w-full h-[60vh] md:h-[75vh] justify-center items-center'>
-                 <div className='bg-black bg-opacity-35 w-full h-full flex justify-center items-center '>
+                 <div className='bg-black bg-opacity-40 w-full h-full flex justify-center items-center '>
                     <div>
-                    <h1 className='text-white text-4xl'>EMPIRE ENGINEERING SERVICES</h1>
+                    <h1 className='poppins text-white font-semibold text-3xl '>Accountability, Adaptability and Customer Centric</h1>
                     </div>
                     
                     </div>

@@ -7,8 +7,13 @@ const Services = () => {
   return (
     <div id='services' className='w-full flex flex-col items-center justify-center '>
          <div className='inline-flex mt-8 border-b-4 border-[#00cc99] px-2 '>
-        <h1 className='poppins text-[#00cc99] text-center text-2xl md:text-4xl'>OUR SERVICES</h1>
+           <h1 className='poppins text-[#00cc99] text-center text-2xl md:text-4xl'>OUR SERVICES</h1>
       </div>
+
+      <p className='mx-28 mt-8 text-center'>You can count on Empire Engineering Services to not only meet, but exceed all your needs and requests.
+                   Learn more about the services we provide below, and let us know if you would like to learn more about a
+                    specific offering.
+             </p>
        
        <div className='w-full h-[400px] flex flex-wrap lg:flex-nowrap justify-center items-center mt-12 md:mt-16 px-10  md:px-24 '>
       <div className='w-full md:w-3/4 lg:w-1/4 my-4 mx-3 blue rounded-lg flex flex-col shadow-2xl '>
