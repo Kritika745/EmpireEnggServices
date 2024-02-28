@@ -12,6 +12,7 @@ const Home = () => {
     <Navbar/>
     <Carousel/>
     <Services/>
+    <AboutUs/>
     <Carousel2/>
     <Footer/>
 

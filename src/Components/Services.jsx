@@ -15,8 +15,8 @@ const Services = () => {
                     specific offering.
              </p>
        
-       <div className='w-full h-[400px] flex flex-wrap lg:flex-nowrap justify-center items-center mt-12 md:mt-16 px-10  md:px-24 '>
-      <div className='w-full md:w-3/4 lg:w-1/4 my-4 mx-3 blue rounded-lg flex flex-col shadow-2xl '>
+       <div className='w-full flex flex-wrap lg:flex-nowrap justify-center items-center mt-12 md:mt-16 px-10  md:px-24 '>
+      <div className='w-full  lg:h-[400px] h-auto md:w-3/4 lg:w-1/4 my-4 mx-3 blue rounded-lg flex flex-col shadow-2xl '>
          <div className='hover:opacity-50'>
             <img className='rounded-t-lg ' src="/fieldservice-card.jpg" alt="" />
          </div>
@@ -27,7 +27,7 @@ const Services = () => {
         </div>
       </div> 
 
-     <div className='w-full h-[400px] md:w-3/4 lg:w-1/4 my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col'>
+     <div className='w-full lg:h-[400px] h-auto md:w-3/4 lg:w-1/4 my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col'>
          <div className='hover:opacity-50'>
             <img className='rounded-t-lg ' src="/constuct-card.jpg" alt="" />
          </div>
@@ -38,7 +38,7 @@ const Services = () => {
         </div>
       </div> 
 
-      <div className='w-full h-[400px] md:w-3/4  lg:w-1/4 my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col'>
+      <div className='w-full lg:h-[400px] h-auto md:w-3/4  lg:w-1/4 my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col'>
          <div className='hover:opacity-50'>
             <img className='rounded-t-lg ' src="/radio-card.jpg" alt="" />
          </div>
@@ -49,7 +49,7 @@ const Services = () => {
         </div>
       </div> 
 
-      <div className='w-full h-[400px] md:w-3/4 lg:w-1/4 my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col  '>
+      <div className='w-full lg:h-[400px] h-auto md:w-3/4 lg:w-1/4 my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col  '>
          <div className='hover:opacity-50'>
             <img className='rounded-t-lg' src="/net-card.jpg" alt="" />
          </div>
@@ -62,8 +62,8 @@ const Services = () => {
 
       </div> 
 
-      <div className='w-full flex flex-wrap lg:flex-nowrap justify-center items-center md:mt-4 mb-10 px-10 md:px-24'>
-      <div className='w-full h-[450px] md:w-3/4 lg:w-1/4  my-4 mx-3 blue rounded-lg flex flex-col shadow-2xl'>
+       <div className='w-full flex flex-wrap lg:flex-nowrap justify-center items-center md:mt-4 mb-10 px-10 md:px-24'>
+      <div className='w-full lg:h-[450px] h-auto md:w-3/4 lg:w-1/4  my-4 mx-3 blue rounded-lg flex flex-col shadow-2xl'>
          <div className='hover:opacity-50'>
             <img className='rounded-t-lg ' src="/outside-card.jpg" alt="" />
          </div>
@@ -74,7 +74,7 @@ const Services = () => {
         </div>
       </div> 
 
-     <div className='w-full h-[450px] md:w-3/4 lg:w-1/4  my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col'>
+     <div className='w-full lg:h-[450px] h-auto md:w-3/4 lg:w-1/4  my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col'>
          <div className='hover:opacity-50'>
             <img className='rounded-t-lg ' src="/noc2-card.jpg" alt="" />
          </div>
@@ -85,7 +85,7 @@ const Services = () => {
         </div>
       </div> 
 
-      <div className='w-full h-[450px] md:w-3/4  lg:w-1/4 my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col'>
+      <div className='w-full lg:h-[450px] h-automd:w-3/4  lg:w-1/4 my-4 mx-3 blue rounded-lg shadow-2xl flex flex-col'>
          <div className='hover:opacity-50'>
             <img className='rounded-t-lg ' src="/prof-card.jpg" alt="" />
          </div>
@@ -94,7 +94,7 @@ const Services = () => {
            <p className='text-white  '>Resource Management and Staffing</p>
            <Link to='/ProfessionalServices'><button className='mt-4 bg-[#00cc99] hover:bg-emerald-600 w-30 px-3 py-2 rounded-md font-bold flex text-[1rem]'> Learn More <ArrowRightCircle className='ml-2 mt-[2.5px]' size={20}/></button></Link>
         </div>
-      </div> 
+      </div>  
 
       </div> 
 
