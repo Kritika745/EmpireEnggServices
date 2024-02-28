@@ -1,5 +1,6 @@
 import React from 'react'
 import Navbar from '../Components/Navbar'
+import Footer from '../Components/Footer'
 
 const ProffServices = () => {
   return (
@@ -8,14 +9,14 @@ const ProffServices = () => {
     <div style={{ overflowX: 'hidden' }}>
       
         <div>
-          <img src="/Images/prof-banner.jpg" alt="Field Service" className="w-full h-auto object-contain" />
+          <img src="/Images/prof-banner.jpg" alt="Field Service" className="w-full h-auto object-contain mt-16" />
         </div>
         <div className="p-8">
-          <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-red-900">Professional Services</h1>
-          <p className="text-sm lg:text-xl mb-6 bg-pink-300 rounded-lg p-3 flex">
+          <span className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#00cc99] poppins border-b-4 border-[#00cc99]">Professional Services</span>
+          <p className="text-sm lg:text-xl mb-6 text-white blue  rounded-lg p-6 mt-7 flex">
           EES self-perform professional services. We are, therefore, an organization of subject matter experts. Our client's competitive advantage often hinges upon our ability to swiftly assemble high-performance teams who can perform at the pace of change.
           </p>
-          <ul className="text-sm lg:text-xl list-disc list-inside bg-red-600/45 rounded-lg p-3">
+          <ul className="text-sm lg:text-xl list-disc list-inside text-white blue  rounded-lg p-6">
             <li>Wireless</li>
             <li>Wireline</li>
             <li>ICT</li>
@@ -27,6 +28,7 @@ const ProffServices = () => {
         </div>
       
     </div>
+    <Footer/>
     </>
   )
 }
