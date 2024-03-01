@@ -8,9 +8,9 @@ const AboutUs = () => {
       </div>
       <div className=' flex w-full flex-wrap md:px-10 lg:px-36'>
         <div className='w-full lg:w-1/3 mt-10 flex justify-center items-center'>
-            <img className='rounded-[50%] md:h-[400px] md:w-[400px] h-[300px] w-[300px] ring-8 ring-violet-950' src="/aboutus.jpg" alt="" />
+            <img className='rounded-[50%] md:h-[400px] md:w-[400px] sm:h-[300px] sm:w-[300px] h-[250px] w-[250px] ring-8 ring-violet-950' src="/aboutus.jpg" alt="" />
         </div>
-        <div className='poppins_400 w-full lg:w-2/3 mt-14 text-[1.1rem] text-justify px-16 '>
+        <div className='poppins_400 w-full lg:w-2/3 mt-14 text-[1.1rem] text-justify md:px-16 px-8'>
             <p>Our Mission is, to believe with collaboration, teamwork, and passion we can create the right
                environment for our people to deliver the best results to our clients.</p>
            <p className='my-2'> Our Vision is, to Lead in the fast-paced changing world of technology and telecommunications.</p>

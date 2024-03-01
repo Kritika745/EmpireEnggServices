@@ -9,6 +9,7 @@ const Navbar=()=> {
     const serviceSection = document.getElementById('about');
     if (serviceSection) {
       serviceSection.scrollIntoView({ behavior: 'smooth' }); 
+      setIsMenuOpen(false);
     }
   }
   
@@ -29,6 +30,16 @@ const Navbar=()=> {
 
   const currentPathname = location.pathname;
   console.log(currentPathname)
+
+
+  const isServicePage =
+  currentPathname.includes('/FieldServices') ||
+  currentPathname.includes('/ConstructionServices') ||
+  currentPathname.includes('/RadioAccessNetworkServices') ||
+  currentPathname.includes('/OutsidePlantServices') ||
+  currentPathname.includes('/DataCenterServices') ||
+  currentPathname.includes('/NOCServices') ||
+  currentPathname.includes('/ProfessionalServices');
  
   return (
     <div className="blue w-full md:h-20 h-22 z-10 flex fixed">
@@ -41,7 +52,7 @@ const Navbar=()=> {
             <Link to='/'><li className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'}`}>Home</li></Link>           
              <Link to='/#about'><li onClick={handleClick} className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'} `}>About Us</li></Link>
              <li className="relative z-50 ">
-              <span className={`text-base hover:text-[#00cc99] font-bold cursor-pointer ${currentPathname.includes('/services') ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'}`} onClick={toggleMenu1}>Services</span>
+              <span className={`text-base hover:text-[#00cc99] font-bold cursor-pointer ${isServicePage ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'}`} onClick={toggleMenu1}>Services</span>
               {isMenuOpen1 && (
                 <ul className="blue p-1 w-[19vw] ring-1 ring-white ring-opacity-20   absolute mt-2  text-white font-bold rounded-lg shadow-lg">
                   <li className="py-1 px-2 hover:text-[#00cc99]">
@@ -96,11 +107,11 @@ const Navbar=()=> {
                 <div className="mt-6">
                   <nav className="grid gap-2">
                      <Link to='/'><li onClick={()=>setIsMenuOpen(false)} className={`text-base hover:text-[#00cc99] font-bold  ${currentPathname === '/' ? 'text-[#00cc99]' : 'border-none text-white'} `}>Home</li></Link>
-                     <Link to='/#about'><li  onClick={()=>setIsMenuOpen(false)} className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? ' text-[#00cc99]' : 'border-none text-white'} `}>About Us</li></Link>
-                     <li   className={`relative z-50 text-base hover:text-[#00cc99] font-bold cursor-pointer ${currentPathname.includes('/services') ? 'border-b-2 border-[#00cc99] text-[#00cc99]' : 'border-none text-white'}`} >
+                     <Link to='/#about'><li   onClick={handleClick}  className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? ' text-[#00cc99]' : 'border-none text-white'} `}>About Us</li></Link>
+                     <li   className={`relative z-50 text-base hover:text-[#00cc99] font-bold cursor-pointer ${isServicePage ? ' text-[#00cc99]' : 'border-none text-white'}`} >
               <span  onClick={toggleMenu1}>Services</span>
               {isMenuOpen1 && (
-                <ul className="blue p-1 w-[19vw] ring-1 ring-white ring-opacity-20   absolute mt-2  text-white font-bold rounded-lg shadow-lg">
+                <ul className="blue p-1 w-full sm:w-[60vw] md:w-[19vw] ring-1 ring-white ring-opacity-20   absolute mt-2  text-white font-bold rounded-lg shadow-lg">
                   <li className="py-1 px-2 hover:text-[#00cc99]">
                     <Link to='/FieldServices'>Field Services</Link>
                   </li>
