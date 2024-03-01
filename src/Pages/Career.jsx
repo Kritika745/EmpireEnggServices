@@ -38,9 +38,8 @@ const Career = () => {
   }).catch((e)=>{
     setloader(false);
     alert("server error or fill data properly")
-  });
-  
-  
+  })
+  ;
   }
 
 
