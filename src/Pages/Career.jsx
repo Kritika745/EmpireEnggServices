@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import axios from "axios"
+import axios from "axios";
 
 const Career = () => {
   const [name,setname]=useState("");

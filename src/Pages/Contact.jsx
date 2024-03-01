@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import Navbar from '../Components/Navbar'
 import Footer from '../Components/Footer'
-import axios from "axios"
+import axios from "axios";
 
 const Contact = () => {
   const [data,setdata]=useState({});
@@ -10,7 +10,6 @@ const Contact = () => {
   function handlechanges(e){
     let v=e.target.value;
     let n=e.target.name;
-    
     setdata((pre)=>{
       return ({...pre,[n]:v
       });
