@@ -10,7 +10,7 @@ const Career = () => {
   const [resume,setfile]=useState([]);
   const [phone,setphone]=useState("");
   const [loader,setloader]=useState(false);
-  let web=import.meta.env.VITE_KEY;
+  let web="https://backendforim.onrender.com";
  
   async function  handleclick(e){
     if(resume=="") {

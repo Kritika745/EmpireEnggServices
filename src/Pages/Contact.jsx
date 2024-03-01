@@ -6,7 +6,7 @@ import axios from 'axios'
 const Contact = () => {
   const [data,setdata]=useState({});
   const [loader,setloader]=useState(false);
-  let web=import.meta.env.VITE_KEY;
+  let web="https://backendforim.onrender.com";
   function handlechanges(e){
     let v=e.target.value;
     let n=e.target.name;
@@ -35,7 +35,7 @@ const Contact = () => {
 
 
 
-  let x=import.meta.env.VITE_KEY;
+
   return (
     <div>
    <Navbar/>
