@@ -12,11 +12,13 @@ const RANservices = () => {
       <img src="/Images/radio-banner.jpg" alt="Field Service" className="w-full h-auto object-contain mt-16" />
     </div>
     <div className="p-8">
-      <span className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text-[#00cc99] poppins border-b-4 border-[#00cc99]">Radio Access Network Services</span>
-      <p className="text-sm lg:text-xl mb-6 text-white blue  rounded-lg p-6 mt-7 flex">
-      EES takes customer networks as their own to ensure zero impact in networks availability, we provide best in market expert diverse workforce that understand all the major OEM’s core network. Our in-house RAN team understands and is able to provide the best end to end support when it comes any customers network.
+      <span className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4 text_blue poppins border-b-4 border-violet-950">Radio Access Network Services</span>
+      <p className="text-sm lg:text-xl mb-6  bg-[#00cc99] bg-opacity-45 rounded-lg p-6 mt-7 flex">
+      EES takes customer networks as their own to ensure zero impact in networks availability, 
+      we provide best in market expert diverse workforce that understand all the major OEM’s core network. 
+      Our in-house RAN team understands and is able to provide the best end to end support when it comes any customers network.
       </p>
-      <ul className="text-sm lg:text-xl list-disc list-inside text-white blue  rounded-lg p-6">
+      <ul className="text-sm lg:text-xl list-disc list-inside bg-[#00cc99] bg-opacity-45  rounded-lg p-6">
         <li>CIQ Design
           <ul className='list-[square] list-inside px-6'>
           <li>Radio (RND)</li>

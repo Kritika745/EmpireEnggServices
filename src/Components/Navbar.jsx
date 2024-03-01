@@ -9,6 +9,7 @@ const Navbar=()=> {
     const serviceSection = document.getElementById('about');
     if (serviceSection) {
       serviceSection.scrollIntoView({ behavior: 'smooth' }); 
+      setIsMenuOpen(false);
     }
   }
   
@@ -106,7 +107,7 @@ const Navbar=()=> {
                 <div className="mt-6">
                   <nav className="grid gap-2">
                      <Link to='/'><li onClick={()=>setIsMenuOpen(false)} className={`text-base hover:text-[#00cc99] font-bold  ${currentPathname === '/' ? 'text-[#00cc99]' : 'border-none text-white'} `}>Home</li></Link>
-                     <Link to='/#about'><li  onClick={()=>setIsMenuOpen(false)} className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? ' text-[#00cc99]' : 'border-none text-white'} `}>About Us</li></Link>
+                     <Link to='/#about'><li   onClick={handleClick}  className={`text-base hover:text-[#00cc99] font-bold ${currentPathname === '/#about' ? ' text-[#00cc99]' : 'border-none text-white'} `}>About Us</li></Link>
                      <li   className={`relative z-50 text-base hover:text-[#00cc99] font-bold cursor-pointer ${isServicePage ? ' text-[#00cc99]' : 'border-none text-white'}`} >
               <span  onClick={toggleMenu1}>Services</span>
               {isMenuOpen1 && (
