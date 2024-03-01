@@ -9,9 +9,14 @@ const Career = () => {
   const [position,setposition]=useState("");
   const [resume,setfile]=useState([]);
   const [phone,setphone]=useState("");
+  const [loader,setloader]=useState(false);
   let web=import.meta.env.VITE_KEY;
  
   async function  handleclick(e){
+    if(resume=="") {
+      alert("add a file");
+      return;
+    }
     
   let form=new FormData();
   form.append("name",name);
@@ -20,6 +25,7 @@ const Career = () => {
   form.append("resume",resume[0]);
   form.append("phone",phone);
   console.log(resume);
+  setloader(true);
    axios.post(web+"/eeslc/carrer",form,
     {
       headers: {
@@ -27,9 +33,11 @@ const Career = () => {
       }
 
   }).then((response)=>{
+    setloader(false);
     alert(response.data);
   }).catch((e)=>{
-    console.log(err);
+    setloader(false);
+    alert("server error or fill data properly")
   });
   
   
@@ -47,6 +55,17 @@ const Career = () => {
       <div className="mt-12 sm:mt-16" >
         <img  src='https://eesllc.com/assets/images/careers-banner.jpg'/>
       </div>
+      {
+        loader && (
+          <>
+          <div className='absolute h-full w-full flex content-center justify-center bg-slate-100 overflow-hidden'>
+            <img src='https://vauxhallone.co.uk/wp-content/themes/hermio/images/loading.gif' className='w-1/6 h-1/6 self-center'/>
+
+          </div>
+          </>
+        )
+      }
+
       <div className='flex flex-col justify-center items-center '>
         <div className=' w-6/6 sm:w-5/6 ml-4 mr-4  mt-6'>
         <div >
