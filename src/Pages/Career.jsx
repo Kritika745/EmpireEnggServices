@@ -42,11 +42,6 @@ const Career = () => {
   ;
   }
 
-
-
-
-
-
   return (
     <>
     <Navbar/>
@@ -68,26 +63,26 @@ const Career = () => {
       <div className='flex flex-col justify-center items-center '>
         <div className=' w-6/6 sm:w-5/6 ml-4 mr-4  mt-6'>
         <div >
-        <h1 className="mb-6  font-bold text-3xl text-blue-600">Careers</h1>
-        <p class="mb-6 text-md text-blue-500">Our people are our greatest asset.  We welcome and value diversity and recognize that our employees’ inspiration, passion, loyalty and dedication are important to the success of our business. As an organization, our employees come from a wide range of backgrounds.  We also have a distinct company culture and seek out people who share our values, commitment and determination to be the best.</p>
+        <h1 className="mb-6   poppins  font-bold text-5xl text_blue border-b-4 border-violet-950 inline ">Careers</h1>
+        <p class="mb-6 mt-6 text-lg">Our people are our greatest asset.  We welcome and value diversity and recognize that our employees’ inspiration, passion, loyalty and dedication are important to the success of our business. As an organization, our employees come from a wide range of backgrounds.  We also have a distinct company culture and seek out people who share our values, commitment and determination to be the best.</p>
         </div>
         </div>
-        <div className='sm:w-1/2'>
+        <div className='sm:w-1/3'>
           <div className='mt-7 mb-7 '>
-          <h3 className="text-3xl font-normal text-blue-500">Join Our Team</h3>
+          <h3 className="text-3xl font-bold text-[#00cc99]">Join Our Team</h3>
           <div>
           <div className=" mt-5">
                     <label for="fname" className="text-lg">Full Name</label>
-                    <input type="text" name="name" id="fname" className="border-lime-900 outline rounded-sm outline-slate-500 w-full" placeholder="" aria-describedby="helpId" required="" onChange={(e)=>{ setname(e.target.value)}}/>
+                    <input type="text" name="name" id="fname" className="border-[1px] h-8 border-[#00cc99] rounded-sm  w-full" placeholder="" aria-describedby="helpId" required="" onChange={(e)=>{ setname(e.target.value)}}/>
                 </div>
                 <div class="form-group mt-3">
-                    <label for="email">Email</label>
-                    <input type="text" name="email" id="email" className="border-lime-900 outline rounded-sm outline-slate-500 w-full" placeholder="" aria-describedby="helpId" required="" onChange={(e)=>{ setemail(e.target.value)}}/>
+                    <label for="email" className="text-lg">Email</label>
+                    <input type="text" name="email" id="email" className="border-[1px] h-8 border-[#00cc99] rounded-sm  w-full" placeholder="" aria-describedby="helpId" required="" onChange={(e)=>{ setemail(e.target.value)}}/>
                 </div>
-                <div>
-                <label for="position">Position Applying For</label>
+                <div class="form-group mt-3">
+                <label for="position" className="text-lg">Position Applying For</label>
                     {/* <!-- <input type="text" name="position" id="position" class="form-control" placeholder="" aria-describedby="helpId" required> --> */}
-                    <select class="form-select" aria-label="Default select example" id="position" name="position" className="border-lime-900 outline outline-slate-500 rounded-sm  w-full" onChange={(e)=>{ setposition(e.target.value)}}>
+                    <select class="form-select" aria-label="Default select example" id="position" name="position" className="border-[1px] h-8 border-[#00cc99] rounded-sm  w-full" onChange={(e)=>{ setposition(e.target.value)}}>
                         <option selected="" className="border-lime-900 outline rounded-sm  w-full">Select an option</option>
                         <option value="Data Center Technician -&nbsp;Texas">Data Center Technician -&nbsp;Texas</option>
                         <option value="Data Center Technician - Florida">Data Center Technician - Florida</option>
@@ -114,18 +109,18 @@ const Career = () => {
                 </div>
                 <div>
                 <div class="form-group mt-3">
-                    <label for="phone">Phone</label>
-                    <input type="number" name="phone" id="phone" class="form-control" placeholder="" aria-describedby="helpId" required="" className="border-lime-900 outline rounded-md outline-slate-500 w-full" onChange={(e)=>{ setphone(e.target.value)}}/>
+                    <label for="phone" className='text-lg' >Phone</label>
+                    <input type="number" name="phone" id="phone" class="form-control" placeholder="" aria-describedby="helpId" required="" className="border-[1px] h-8 border-[#00cc99] rounded-sm  w-full" onChange={(e)=>{ setphone(e.target.value)}}/>
                 </div>
                 </div>
                 <div>
-                <div class="form-group mt-3">
-                    <label for="cv" class="form-label">Upload Resume</label>
-                    <input class="form-control" type="file" id="cv" name="cv" className=" outline outline-slate-500 rounded-sm  w-full" onChange={(e)=>{ setfile(e.target.files)}}/>
+                <div class="form-group mt-3 ">
+                    <label for="cv" class="form-label" className='text-lg'>Upload Resume</label>
+                    <input class="form-control" type="file" id="cv" name="cv" className=" border-[1px] h-8 border-[#00cc99] rounded-sm w-full" onChange={(e)=>{ setfile(e.target.files)}}/>
                 </div>
                 </div>
                 <div>
-                  <button className='outline-slate-500 bg-cyan-700 mt-6 w-1/6 h-8 rounded-sm text-white' onClick={handleclick}>Submit</button>
+                  <button className='mt-8 bg-[#00cc99] hover:bg-emerald-600 w-28 px-2 py-1 rounded-md font-semibold text-[1.2rem]' onClick={handleclick}>Submit</button>
                 </div>
 
 
